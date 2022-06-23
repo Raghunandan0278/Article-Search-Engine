@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-Up</title>
+
+        <link rel="stylesheet" href="style.css">
+      
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+		
+			
+		<style>
+			body{
+				background-image: url('wp1.jpg');
+			}
+			</style>
+    </head>
+	<body>
+		<h2><img src="searzh (1).png" alt="S">ign-Up/In </h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="../../Frontend/Searchengine/search engine.html" id="form" class="form" method="POST" onsubmit = "return(checkInputs());">
+			<h1>Create Account</h1>
+			
+			<span>and start surfing</span>
+                <input type="text" placeholder="Name123@" id="username"  required/>
+				<input type="email" placeholder="a@florin-pop.com" id="email" required  />
+				<input type="tel" placeholder="01234-56789" id="num" required />
+				<input type="password" placeholder="Password" id="password" required/>
+				<input type="password" placeholder="Re-Enter Password " id="password2" oninput="check(this)" />
+				
+<script language='javascript' type='text/javascript'>
+    function check(input) {
+        if (input.value != document.getElementById('password').value) {
+            input.setCustomValidity('Password Must be Matching.');
+        } else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+    }
+	function myFunction() {
+    const inpObj = document.getElementById("id1");
+    if (!inpObj.checkValidity()) {
+      document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+      document.getElementById("demo").innerHTML = "Input OK";
+    } 
+  } 
+
+	
+
+</script>
+
+				<button >Sign Up</button>
+
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="../../Frontend/Searchengine/search engine.html"  id="form" >
+			<h1>Sign in</h1>			
+			<span>and start searching</span>
+			<input type="text" placeholder="Name123@" id="username" />
+			<input type="password" placeholder="Password" id="password" />
+			
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp" >Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="script.js"></script>
+<script src="valid.js"></script>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+
+	</body>
+</html>
+
+
