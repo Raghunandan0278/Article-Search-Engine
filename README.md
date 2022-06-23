@@ -1,1 +1,3 @@
-# Article-Search-Engine
+# Article-Search-Engine (SEARZH)
+
+Searzh is an article search engine which searches through the web. It consists of Admin, registered users and users. The Users can search for certain types of multimedia that match their keywords. The aim of this project is to design a search engine which provides users with a search option and develop a database for the search engine to maintain the records of registered users, multimedia repositories, schemes for registered users, renewal of schemes. It also maintains records of the approved contents by admin and payments which would also provide search, payment and registered users reports.
