@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <title>Search</title>
+  <meta name="description" value="The search engine that doesn't track you. Learn More.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  <link rel="stylesheet" type="text/css" href="./css/colors.css">
+  <link rel="stylesheet" type="text/css" href="./css/modal.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="icon" type="image/png" href="./img/se.png">
+-->
+  <meta name="author" value="vanGato">
+  <link rel="stylesheet" href="./reg user main/style.css">
+  <link rel="icon" type="image/x-icon" href="/reg user main/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+  <style>
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    body {
+      font-family: "Lato", sans-serif;
+      transition: background-color .5s;
+      background: url('./images/wp1.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.164);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #ffffff;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #088623;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+</head>
+<body>
+    
+<div id="mySidenav" class="sidenav" style="font-family: Georgia, serif;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" >Home</a>
+        <a href="#">My Account</a>
+        <a href="#">Upload content</a>
+        <a href="#">My Content</a>
+      </div>
+      
+      <div id="main">
+        
+        <span><span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;<span style="float: right;font-family: Garamond, serif;">Welcome back John!</span></span>
+        <p style="align-content: center;"></p>
+        </span>
+      </div>
+      
+      
+      
+      
+
+  <div class="index">
+    <section class="index__header">
+      <div class="index__logo"></div>
+      <ul class="index__nav">
+        <li class="index__active"><a>Web</a></li>
+        <li><a href="##">Images</a></li>
+        <li><a href="##">Videos</a></li>
+        <li><a href="##">News</a></li>
+      </ul>
+      <div class="index__search">
+        <form class="index__form" action="../../Frontend/Searchengine/result.html" methode="GET">
+          <div>
+            <input name="q" type="search"
+                   class="index__query" 
+                   maxlength="512"
+                   autocomplete="off"
+                   title="Search"
+                   aria-label="Search"
+                   dir="ltr"
+                   spellcheck="false"
+                   autofocus="autofocus"
+            >
+          </div>
+          <button class="index__button" aria-label="Search" type="submit">
+            <div class="index__ico"></div>
+          </button>
+        </form>
+      </div>
+    </section>
+
+
+    <div class="row">
+  
+            <div class="column" style="">
+              <center><img src="./images/accountpic.png" alt="um" style="width: 130px;height: 130px;margin-top: 35px;"></center>
+              <center><h2 style="margin-top: 55px;"><a href=""><p style="color: rgb(46, 46, 46); font-family: 'Concert One', cursive;">My Account</p></a></h2></center>
+              
+            </div>
+            <div class="column" style="">
+              <center><img src="./images/cloud upload.png" style="width: 190px;height: 190px;"></center>
+              <center><h2><a href="heheboi.html"><p style="color: rgb(46, 46, 46); font-family: 'Concert One', cursive;">Upload content</p></a></h2</center>
+              
+            </div>
+            <div class="column" style="">
+              <center><img src="./images/mycontent.png" alt="um" style="width: 200px;height: 202px;"></center>
+              <center><h2><a href="myContent.html"><p style="color: rgb(46, 46, 46); font-family: 'Concert One', cursive; text-decoration: none;">My Contents</p></a></h2></center>
+              
+            </div>
+          </div>
+
+    <footer class="index__footer">
+      <div class="index__bottom">
+        <ul class="index__links">        
+          <li><a href="#business">Business</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="terms">Terms</a></li>
+        </ul>
+        <p class="index__copyright">&copy; 2021 Searzh</p>
+      </div>
+    </footer>
+  </div>
+  <!-- Modal -->
+  <div class="modal" id="about" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__header">
+        <h2>About</h2>
+        <a href="#" class="modal__close" aria-hidden="true">×</a>
+      </div>
+      <div class="modal__body">
+        <strong></strong><br>
+        <p>A self funded Search Engine that enables it's users pass information amongst themselves.</p>
+      </div>
+      <div class="modal__footer">
+        <p>Last Update 15.12.2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="business" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__header">
+        <h2></h2>
+        <a href="#" class="modal__close" aria-hidden="true">×</a>
+      </div>
+      <div class="modal__body">
+        <strong>Business</strong><br>
+        <p>A self funded Search Engine </p>
+      </div>
+      <div class="modal__footer">
+        <p>Last Update 15.12.2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="privacy" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__header">
+        <h2></h2>
+        <a href="#" class="modal__close" aria-hidden="true">×</a>
+      </div>
+      <div class="modal__body">
+        <strong>Privacy</strong><br>
+        <p>Users' privay is always our priority. No Information is sold on the dark web. </p>
+      </div>
+      <div class="modal__footer">
+        <p>Last Update 15.12.2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="terms" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__header">
+        <h2></h2>
+        <a href="#" class="modal__close" aria-hidden="true">×</a>
+      </div>
+      <div class="modal__body">
+        <strong>Terms</strong><br>
+        <p>Users upload content and other details at their own risk.</p>
+      </div>
+      <div class="modal__footer">
+        <p>Last Update 15.12.2021</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          
+        }
+        </script>
+  
+  <!-- /Modal -->
+</body>
+</html>
